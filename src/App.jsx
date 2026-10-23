@@ -77,7 +77,7 @@ function App() {
             </div>
           </div>
           <div className="photo-frame">
-            <img src="/profile.jpg" alt="Portrait of Rawan Ahmed" />
+            <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Portrait of Rawan Ahmed" />
           </div>
         </section>
 
