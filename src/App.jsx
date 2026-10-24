@@ -235,7 +235,15 @@ function App() {
             >
               WhatsApp
             </a>
+            
 
+            <a
+              href="https://www.linkedin.com/in/https://www.linkedin.com/in/rawan-ahmed-798a69336"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
             <a
               href="https://github.com/Rawan-ahmed00"
               target="_blank"
