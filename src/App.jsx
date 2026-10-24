@@ -1,3 +1,4 @@
+
 import './App.css'
 
 const skills = [
@@ -46,6 +47,8 @@ const projects = [
 ]
 
 function App() {
+  const baseUrl = import.meta.env.BASE_URL
+
   return (
     <>
       <header className="navbar">
@@ -71,13 +74,27 @@ function App() {
               I build web applications with React and Django, from the
               interface to the database.
             </p>
+
             <div className="hero-buttons">
-              <a href="#projects" className="btn btn-primary">View projects</a>
-              <a href="/Rawan-Ahmed-CV.pdf" download className="btn btn-ghost">Download CV</a>
+              <a href="#projects" className="btn btn-primary">
+                View projects
+              </a>
+
+              <a
+                href={`${baseUrl}Rawan-Ahmed-CV.pdf`}
+                download="Rawan-Ahmed-CV.pdf"
+                className="btn btn-ghost"
+              >
+                Download CV
+              </a>
             </div>
           </div>
+
           <div className="photo-frame">
-            <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Portrait of Rawan Ahmed" />
+            <img
+              src={`${baseUrl}profile.jpg`}
+              alt="Portrait of Rawan Ahmed"
+            />
           </div>
         </section>
 
@@ -135,13 +152,28 @@ function App() {
                 <div>
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
-                  <p className="project-stack">{project.stack.join(', ')}</p>
+                  <p className="project-stack">
+                    {project.stack.join(', ')}
+                  </p>
                 </div>
+
                 <div className="project-links">
                   {project.live && (
-                    <a href={project.live} target="_blank" rel="noreferrer">Live demo</a>
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Live demo
+                    </a>
                   )}
-                  <a href={project.github} target="_blank" rel="noreferrer">GitHub</a>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub
+                  </a>
                 </div>
               </li>
             ))}
@@ -150,21 +182,27 @@ function App() {
 
         <section id="training" className="block">
           <h2>Training</h2>
+
           <div className="training">
             <a
-              href="/cyparta-certificate.jpg"
+              href={`${baseUrl}cyparta-certificate.jpg`}
               target="_blank"
               rel="noreferrer"
               className="cert-thumb"
             >
-              <img src="/cyparta-certificate.jpg" alt="Cyparta training certificate" />
+              <img
+                src={`${baseUrl}cyparta-certificate.jpg`}
+                alt="Cyparta training certificate"
+              />
             </a>
+
             <div>
               <h3>Full Stack Training Program</h3>
               <p>Cyparta, October City, Egypt</p>
               <p>June to September 2026</p>
+
               <a
-                href="/cyparta-certificate.jpg"
+                href={`${baseUrl}cyparta-certificate.jpg`}
                 target="_blank"
                 rel="noreferrer"
                 className="cert-link"
@@ -182,9 +220,13 @@ function App() {
           <p className="contact-text">
             I'm open to junior full stack roles. Write to me at:
           </p>
+
           <p className="contact-lead">
-            <a href="mailto:ra1097651@gmail.com">ra1097651@gmail.com</a>
+            <a href="mailto:ra1097651@gmail.com">
+              ra1097651@gmail.com
+            </a>
           </p>
+
           <div className="contact-links">
             <a
               href="https://wa.me/201018908063?text=Hello%20Rawan%2C%20I%20saw%20your%20portfolio"
@@ -193,11 +235,19 @@ function App() {
             >
               WhatsApp
             </a>
-            <a href="https://github.com/Rawan-ahmed00" target="_blank" rel="noreferrer">
+
+            <a
+              href="https://github.com/Rawan-ahmed00"
+              target="_blank"
+              rel="noreferrer"
+            >
               GitHub
             </a>
           </div>
-          <p className="band-footer">© {new Date().getFullYear()} Rawan Ahmed</p>
+
+          <p className="band-footer">
+            © {new Date().getFullYear()} Rawan Ahmed
+          </p>
         </div>
       </section>
     </>
