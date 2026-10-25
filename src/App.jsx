@@ -1,4 +1,3 @@
-
 import './App.css'
 
 const skills = [
@@ -197,9 +196,9 @@ function App() {
             </a>
 
             <div>
-              <h3>Full Stack Training Program</h3>
-              <p>Cyparta, October City, Egypt</p>
-              <p>June to September 2026</p>
+              <h3>Full Stack Development</h3>
+              <p>Cyparta Software House, October City, Egypt</p>
+              <p>Completed September 30, 2026 · 584 hours · Grade: Very good</p>
 
               <a
                 href={`${baseUrl}cyparta-certificate.jpg`}
@@ -235,15 +234,15 @@ function App() {
             >
               WhatsApp
             </a>
-            
 
             <a
-              href="https://www.linkedin.com/in/https://www.linkedin.com/in/rawan-ahmed-798a69336"
+              href="https://www.linkedin.com/in/rawan-ahmed-798a69336"
               target="_blank"
               rel="noreferrer"
             >
               LinkedIn
             </a>
+
             <a
               href="https://github.com/Rawan-ahmed00"
               target="_blank"
